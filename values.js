@@ -14,9 +14,6 @@ function valuesForProperty(values, propertyName) {
 
 
     return values.map(value => {
-        // console.log(Object.keys(value));
-        // console.log(propertyName);
-        // console.log(Object.keys(value) == propertyName);
         if (Object.keys(value) == propertyName)
         {
             return Object.values(value)[0];
@@ -28,8 +25,8 @@ function valuesForProperty(values, propertyName) {
 
 }
 
-// let dicts = [{age: 10}, {remote: false}]
+let dicts = [{age: 10}, {remote: false}]
 // let dicts = [{"age": 10}, {"age": 12}]
-let dicts = []
+// let dicts = []
 
 console.log(valuesForProperty(dicts, "age"))
