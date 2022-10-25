@@ -10,7 +10,8 @@ def values_for_key(list_of_dicts, key):
 
     # return output
 
-    return [i[key] if key in i else None for i in list_of_dicts]
+    # return [i[key] if key in i else None for i in list_of_dicts]
+    return [d.get(key) for d in list_of_dicts]
 
 dicts = [{"age": 10}, {"remote": False}]
 # dicts = [{"age": 10}, {"age": 12}]

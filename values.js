@@ -13,15 +13,17 @@ function valuesForProperty(values, propertyName) {
     // return output;
 
 
-    return values.map(value => {
-        if (Object.keys(value) == propertyName)
-        {
-            return Object.values(value)[0];
-        } else {
-            return undefined;
-        }
+    // return values.map(value => {
+    //     if (Object.keys(value) == propertyName)
+    //     {
+    //         return Object.values(value)[0];
+    //     } else {
+    //         return undefined;
+    //     }
 
-    });
+    // });
+
+    return values.map(x => x[propertyName]);
 
 }
 
